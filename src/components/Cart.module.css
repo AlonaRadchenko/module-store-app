@@ -1,0 +1,26 @@
+td img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.cartTable tr:not(:first-child) td {
+  font-size: 12px;
+}
+
+.cartTable td {
+  text-align: center;
+  border: 1px solid rgba(91, 91, 91, 0.1);
+  padding: 0 4px;
+}
+
+.cartTable td button {
+  background: #E07070;
+  font-size: 1em;
+  padding: 4px 6px;
+}
+
+.cartTable {
+  border: 1px solid rgba(91, 91, 91, 0.1);
+  border-collapse: collapse;
+}

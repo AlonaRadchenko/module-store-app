@@ -1,0 +1,31 @@
+.productItem {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px;
+  padding: 8px;
+  width: 150px;
+  height: 180px;
+  border: 1px solid rgba(91, 91, 91, 0.2);
+  border-radius: 8px;
+}
+
+.productItem:hover {
+  box-shadow: 0 0 8px rgba(91, 91, 91, 0.6);
+}
+
+.productItem img {
+  height: 100px;
+  object-fit: contain;
+  width: 100px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.price {
+  color: #7adf07;
+  font-weight: bold;
+}

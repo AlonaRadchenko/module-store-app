@@ -1,0 +1,4 @@
+.wrapedContent {
+  display: flex;
+  flex-wrap: wrap;
+}
