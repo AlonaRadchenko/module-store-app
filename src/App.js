@@ -6,9 +6,12 @@ import React, { useEffect, useState } from 'react';
 
 function App(props) {
   const [loading, setLoading] = useState(true);
-  useEffect( async () => {
-    await props.actions.products.getProducts();
-    setLoading(false)
+  useEffect(() => {
+    async function callGetProducts() {
+      await props.actions.products.getProducts();
+      setLoading(false)
+    }
+    callGetProducts();
   }, []);
   return (
     <div className="App">

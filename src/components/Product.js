@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { storeConnector } from '../store';
 
 import styles from './Product.module.css';
@@ -11,7 +11,7 @@ const Product = (props) => {
 
   return (
     <div className={styles.productItem}>
-      <img src={props.item.imgURL}></img>
+      <img alt='' src={props.item.imgURL}></img>
       <div className={styles.name}>{props.item.name}</div>
       <div>
         <span>price: </span>

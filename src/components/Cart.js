@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { storeConnector } from '../store';
 
 import styles from './Cart.module.css';
@@ -35,7 +35,7 @@ const Cart = (props) => {
                 <tr key={i}>
                   <td>{i+1}</td>
                   <td>
-                    <img src={el.imgURL}></img>
+                    <img alt='' src={el.imgURL}></img>
                   </td>
                   <td>{el.name}</td>
                   <td>{props.countOfEachItemById[el.id]}</td>
