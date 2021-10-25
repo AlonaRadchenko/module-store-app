@@ -36,10 +36,3 @@ export const storeConnector = (comp, data) => {
   }
   return connect(mapStateToProps, mapDispatchToProps)(comp);
 }
-
-export function dispatcher(type, payload) {
-  return {
-    type,
-    ...payload
-  }
-}
